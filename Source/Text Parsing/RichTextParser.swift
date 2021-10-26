@@ -332,7 +332,7 @@ class RichTextParser {
         let frame = NSString(string: "").boundingRect(
             with: CGSize(width: 0, height: .max),
             options: [.usesFontLeading, .usesLineFragmentOrigin],
-            attributes: [.font: self.font],
+            attributes: [.font: UIFont.systemFont(ofSize: font.pointSize - 2)],
             context: nil
         )
         return frame.size.height
